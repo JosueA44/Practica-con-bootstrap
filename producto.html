@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/other.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fondo">
+            <a class="navbar-brand" href="index.html">CM19134</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="producto.html">Productos</a>
+                    <a class="nav-link float-right" href="login.html">Cerrar sesión </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+
+    <div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-9 ">
+            <div class="card fondo m-color">
+                <div class="card-header">
+                    <h5>Detalle de Producto</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nombreProducto">Nombre: <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="nombreProducto" name="nombreProducto">
+                                </div>
+                                <div class="form-group">
+                                        <label for="existenciaProducto">Existencias: <span class="text-danger">*</span></label>
+                                        <input class="form-control" id="existenciaProducto" rows="5" name="existenciaProducto">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="precioProducto">Precio(Unidad): <span class="text-danger">*</span></label>
+                                    <input class="form-control" id="precioProducto" rows="5" name="precioProducto">
+                                </div>
+                                <div class="form-group">
+                                    <label for="categoria">Categoria: <span class="text-danger">*</span></label>
+                                    <select class="form-control" id="categoria" name="categoria">
+                                        <option value="1">Abarrotes</option>
+                                        <option value="2">Dulcería</option>
+                                        <option value="3">Granos básicos</option>
+                                        <option value="4">Entre otros</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <a href="listaProductos.html" class="btn btn-dark float-right">Guardar</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    </div>    
+
+
+
+  
+    
+</body>
+</html>

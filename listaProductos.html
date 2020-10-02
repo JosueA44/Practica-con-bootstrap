@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Productos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/other.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fondo">
+            <a class="navbar-brand" href="index.html">CM19134</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="producto.html">Productos</a>
+                    <a class="nav-link float-right" href="login.html">Cerrar sesión </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-12 col-md-9 ">
+                <div class="card fondo m-color">
+                    <div class="card-header">
+                        <h5>Listado de productos</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="buscarProducto">Buscar Producto: <span class="text-danger"></span></label>
+                            <input type="text" class="form-control" id="buscarProducto" name="buscarProducto">
+                        </div>
+                        <div class="espacio">
+                            <a href="listaProductos.html" class="btn btn-dark float-right">Guardar</a>
+                        </div>
+                        
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Precio (Unidad)</th>
+                                    <th scope="col">Existencias</th>
+                                    <th scope="col">Acciones</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Soda</th>
+                                    <td>$ 1.50</td>
+                                    <td>500</td>
+                                    <td>
+                                        <a href="producto.html" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">Editar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Jugo de naranja</th>
+                                    <td>$ 0.50</td>
+                                    <td>150</td>
+                                    <td>
+                                        <a href="producto.html" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">Editar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Paquetes de galletas</th>
+                                    <td>$ 1.00</td>
+                                    <td>800</td>
+                                    <td>
+                                        <a href="producto.html" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">Editar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bolsa de dulces</th>
+                                    <td>$ 0.75</td>
+                                    <td>1500</td>
+                                    <td>
+                                        <a href="producto.html" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">Editar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Churros</th>
+                                    <td>$ 0.15</td>
+                                    <td>1000</td>
+                                    <td>
+                                        <a href="producto.html" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">Editar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Botella de aceite</th>
+                                    <td>$ 2.75</td>
+                                    <td>400</td>
+                                    <td>
+                                        <a href="producto.html" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">Editar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Botella de agua</th>
+                                    <td>$ 0.60</td>
+                                    <td>700</td>
+                                    <td>
+                                        <a href="producto.html" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">Editar</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
